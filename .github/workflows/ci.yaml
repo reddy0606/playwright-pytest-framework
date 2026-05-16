@@ -30,5 +30,7 @@ jobs:
           playwright install
           playwright install-deps
 
-      - name: Run tests
+      - name: Run tests with xvfb
         run: pytest --maxfail=1 --disable-warnings -q
+
+        
