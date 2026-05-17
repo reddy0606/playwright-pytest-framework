@@ -62,4 +62,4 @@ class LoginPage:
         await self.page.click(self.login_button)
 
     async def get_error_message(self):
-        return await self.page.locator(self.error_message.text_content()
+        return await self.page.locator(self.error_message).text_content()
